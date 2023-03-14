@@ -34,7 +34,7 @@ let disp = () => {
             <th>Accepted terms?</th>
         </tr>${tablevel}
         
-        Name, Email, Password, Dob, Accepted terms?
+        
     </table>`;
   let det = document.getElementById("x-data");
   det.innerHTML = table;
