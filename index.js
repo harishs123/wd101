@@ -23,7 +23,7 @@ let disp = () => {
       let row = `<tr>${namet} ${emailt} ${passwdt} ${dateofbirtht} ${termsandcondt}</tr>`;
       return row;
     })
-    .join("\n\\t");
+    .join("\n");
 
   let table = `<table>
         <tr>
@@ -31,10 +31,8 @@ let disp = () => {
             <th>Email</th>
             <th>Password</th>
             <th>Dob</th>
-            <th>Accepted terms?</th>
+            <th>Accepted Terms?</th>
         </tr>${tablevel}
-        
-        
     </table>`;
   let det = document.getElementById("x-data");
   det.innerHTML = table;
@@ -109,3 +107,4 @@ let savedata = (op) => {
 
 form.addEventListener("submit", savedata);
 disp();
+
