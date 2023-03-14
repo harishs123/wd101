@@ -30,9 +30,11 @@ let disp = () => {
             <th>Name</th>
             <th>Email</th>
             <th>Password</th>
-            <th>DOB</th>
-            <th>Accepted?</th>
+            <th>Dob</th>
+            <th>Accepted terms?</th>
         </tr>${tablevel}
+        
+        Name, Email, Password, Dob, Accepted terms?
     </table>`;
   let det = document.getElementById("x-data");
   det.innerHTML = table;
