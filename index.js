@@ -23,7 +23,7 @@ let disp = () => {
       let row = `<tr>${namet} ${emailt} ${passwdt} ${dateofbirtht} ${termsandcondt}</tr>`;
       return row;
     })
-    .join("\n");
+    .join("\n\\t");
 
   let table = `<table>
         <tr>
